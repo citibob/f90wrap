@@ -61,8 +61,8 @@ subroutine f90wrap_mysubroutine(a, b, tt)
     type mytype_ptr_type
         type(mytype), pointer :: p => NULL()
     end type mytype_ptr_type
-    double precision :: a
-    double precision :: b
+    double precision, intent(in) :: a
+    double precision, intent(inout) :: b
     type(mytype_ptr_type) :: tt_ptr
     integer, intent(in), dimension(2) :: tt
     tt_ptr = transfer(tt, tt_ptr)
