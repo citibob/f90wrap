@@ -1,0 +1,9 @@
+********* BEFORE
+b= 17
+tt= <mytype>{
+    val : 17.0}
+********* AFTER
+b= 17
+tt= <mytype>{
+    val : 12.0}
+ Running mysubroutine
